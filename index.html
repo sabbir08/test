@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.12.8")
+  -->
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet"
+    type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css" rel="stylesheet" type="text/css">
+  <style>
+    .banner {
+      min-height: 1020px;
+      background-image: url(https://www.google.com/docs/about/images/docs/banner-1200.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .my-card {
+      width: 100%;
+      border-radius: 12px;
+      padding: 35px 25px;
+    }
+    .text-decoration-none {
+      list-style-type: none;
+    }
+    .text-decoration-none>a {
+      text-decoration: none;
+    }
+    .w_color {
+      background-color: #fff;
+    }
+    .g_color {
+      background-color: #f6f6f6;
+    }
+    .wrapper_container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Major row A==>-->
+  <div class="row " id="q-app">
+    <!-- Navigation 1st col-->
+    <div class="col-12  row q-header fixed-top w_color">
+      <div class="col-2 q-pa-md">
+        <div class="text-h4 text-center text-weight-bolg text-grey-8">Google</div>
+      </div>
+      <div class="col-7 ">
+        <q-tabs v-model="tab" dense align="left" no-caps inline-label class="text-black" style="height: 67px;">
+          <q-tab name="Docs" icon="img:https://www.google.com/images/about/docs-icon.svg" label="Docs" />
+          </q-tab>
+          <q-tab name="Sheets" icon="img:https://www.google.com/images/about/sheets-icon.svg" label="Sheets" />
+          </q-tab>
+          <q-tab name="Slides" icon="img:https://www.google.com/images/about/slides-icon.svg" label="Slides" />
+          </q-tab>
+          <q-tab name="Forms" icon="img:https://www.google.com/images/about/forms-icon.svg" label="Forms" />
+          </q-tab>
+        </q-tabs>
+      </div>
+      <div class="col-3">
+        <ul>
+          <a class="text-bold q-pr-lg text-black" href="#">For Business</a>
+          <a class="text-bold q-pr-lg text-black" href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- main content 2nd colS==>-->
+    <div class="col-12">
+      <!-- 1st row Banner section-->
+      <div class="row banner">
+        <!-- <q-img src="../kolpo.png">  </q-img> -->
+        <div class="wrapper_container self-center">
+          <div class="row justify-center q-mb-xl">
+            <span class="text-h3 text-white text-weight-thin">Create useful Jake spreadsheets</span>
+          </div>
+
+          <div class="q-pa-md row q-col-gutter-x-md justify-center">
+            <div class="col-5">
+              <q-card class="my-card text-center">
+                <q-card-section>
+                  <div class="text-h4">Personal</div>
+                </q-card-section>
+
+                <q-icon name="img:https://www.google.com/images/about/docs-icon.svg" class="items-center"
+                  style="font-size: 3rem;" />
+                </q-icon>
+
+                <q-card-section>
+                  With Google Sheets, you can create, edit, and collaborate wherever you are. For free.
+                </q-card-section>
+
+                <q-card-actions vertical align="center">
+                  <q-btn color="primary" label="Go to Google Sheets" />
+                </q-card-actions>
+
+              </q-card>
+            </div>
+
+            <div class="col-5">
+              <q-card class="my-card text-center">
+                <q-card-section>
+                  <div class="text-h4">Business</div>
+                </q-card-section>
+                <q-icon name="img:https://www.google.com/images/about/gsuite-logo.svg" class="items-center q-pa-sm"
+                  style="font-size: 2rem;" />
+                </q-icon>
+
+                <q-card-section>
+                  The Google Docs you love with added security and control for teams.
+                </q-card-section>
+
+                <q-card-actions vertical align="center">
+                  <q-btn color="primary" label="Learn More" />
+                </q-card-actions>
+
+              </q-card>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2nd row more then section I==>-->
+      <div class="row q-my-xl">
+        <div class="col-6 q-mt-xl q-pt-xl text-center">
+          <q-img src="https://www.google.com/docs/about/images/en/docs-animation/laptop.png" style="max-width: 850px;">
+          </q-img>
+        </div>
+        <div class="col-6 q-pa-xl" style="max-width: 750px;">
+          <div class="q-pa-xl q-pr-xl">
+            <div class="q-p-xl q-pr-xl q-mb-md text-h3">More than letters and words</div>
+            <div class="q-pr-xl text-body1 text-weight-light text-justify
+              ">Google Docs brings your documents to life with smart editing and styling tools to help you easily
+              format text and paragraphs. Choose from hundreds of fonts, add links, images, and drawings. All for free.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd row get a head-->
+      <div class="row  g_color">
+        <div class="col">
+          <div class="row q-my-xl justify-center">
+            <div class="col-8 q-pa-lg text-center">
+              <div class="q-pb-md text-h3">Get a head start with templates</div>
+              <div class="q-px-xl text-body1 text-weight-light text-center">
+                Choose from a wide variety of resumes, reports, and other pre-made documents — all designed to make
+                your work that much better, and your life that much easier.</div>
+
+            </div>
+          </div>
+
+          <div class="row q-mt-md">
+            <div class="col">
+              <q-img src="https://www.google.com/docs/about/images/en/templates.png" style="height:350px; width: 100%">
+              </q-img>
+            </div>
+          </div>
+          <div class="row q-mt-md justify-center">
+            <div class="col q-ma-xl text-center">
+              <q-btn color="primary" label="View all templates" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4th row get u r document-B==> -->
+      <div class="row wrapper_container">
+        <div class="col-6 q-pa-xl">
+          <div class="q-pt-xl q-pr-xl q-mb-md text-h4">Get to your documents anywhere, anytime</div>
+          <div class="q-pr-xl q-mb-xl text-body1 text-weight-light text-justify">Access, create, and edit your
+            documents wherever you go — from your phone, tablet, or computer — even when there's no connection
+          </div>
+          <q-btn color="primary" label="Download the app" />
+
+        </div>
+        <div class="col-6 q-pa-xl text-center">
+          <q-img src="https://www.google.com/docs/about/images/en/download.png" style=" max-width: 550px;">
+          </q-img>
+        </div>
+
+      </div>
+
+      <!-- 5th row DO more-->
+      <div class="g_color">
+        <div class="row q-pt-xl wrapper_container">
+          <div class="col-6 q-px-xl q-pt-xl text-center">
+            <q-img src="A-1.PNG" style=" max-width: 550px;">
+            </q-img>
+          </div>
+
+          <div class="col-6 q-px-xl q-pt-xl">
+            <div class="q-pr-xl q-mb-md text-h4">Do more, togather</div>
+            <div class="q-pr-xl q-mb-xl text-body1 text-weight-light text-left">
+
+              <q-list separator>
+                <q-item clickable v-ripple>
+                  <q-item-section>Share with any one</q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple>
+                  <q-item-section>
+                    <q-item-label>Edit with real-time</q-item-label>
+                  </q-item-section>
+                </q-item>
+
+                <q-item clickable v-ripple>
+                  <q-item-section>
+                    <q-item-label overline>Chat & Comment</q-item-label>
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6th row never hit -->
+      <div class="row wrapper_container w_color">
+        <div class="col-6 q-pa-lg">
+          <div class="q-pt-lg q-pr-lg q-mb-md text-h4">Never hit “save” again</div>
+          <div class="q-pr-lg q-mb-lg text-body1 text-weight-light text-justify">All your changes are automatically
+            saved as you type. You can even use revision history to see old versions of the same document, sorted by
+            date and who made the change.
+          </div>
+
+        </div>
+        <div class="col-6 q-pa-xl text-center">
+          <q-img src="https://www.google.com/docs/about/images/en/icon-open.png"
+            style="height: 150px; max-width: 180px;">
+          </q-img>
+        </div>
+
+      </div>
+
+      <!-- 7th row work with words -->
+      <div class="col g_color">
+        <div class="col wrapper_container">
+          <div class="q-mt-xl q-pt-xl text-h3 text-center">Works with Word</div>
+          <div class="row q-mb-xl q-pa-xl q-col-gutter-x-xl">
+
+            <div class="col-4 text-center q-pa-xl">
+              <q-img src="https://www.google.com/docs/about/images/en/icon-open.png"
+                style="height:95px; max-width: 80px;" class="q-mb-lg">
+              </q-img>
+              <div class="text-body2 text-center q-pa-lg">
+                Open, and edit, and save Microsoft Word files with the Chrome extension or app.
+              </div>
+            </div>
+
+            <div class="col-4 text-center q-pa-xl">
+              <q-img src="https://www.google.com/docs/about/images/en/icon-save.png"
+                style="height:95px; max-width: 80px;" class="q-mb-lg">
+              </q-img>
+              <div class="text-body2 text-center q-pa-lg">
+                Convert Word files to Google Docs and vice versa.
+              </div>
+            </div>
+
+            <div class="col-4 text-center q-pa-xl">
+              <q-img src="https://www.google.com/docs/about/images/en/icon-free.png"
+                style="height:95px; max-width: 80px;" class="q-mb-lg">
+              </q-img>
+              <div class="text-body2 text-center q-pa-lg">
+                Don't worry about file formats again.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 8th row all of search-->
+      <div class="row q-pt-xl wrapper_container">
+        <div class="col-6 q-px-xl q-pt-xl text-center">
+          <q-img src="https://www.google.com/docs/about/images/en/search-animation/power-search.png"
+            style=" max-width: 550px;">
+          </q-img>
+        </div>
+
+        <div class="col-6 q-px-xl q-pt-xl">
+          <div class="q-pr-xl q-mb-md text-h4">All of Search, right in Docs.</div>
+          <div class="q-pr-xl q-mb-xl text-body1 text-weight-light text-left">Explore and get inspired by images,
+            quotes, and text from Google searches, without leaving the Android app.
+          </div>
+          <q-btn color="primary" label="Get Docs for Android" />
+
+        </div>
+
+      </div>
+
+      <!-- 9th row do more-->
+      <div class="g_color">
+        <div class="row wrapper_container q-mt-xl q-pt-xl">
+          <div class="col-6 q-pa-lg">
+            <div class="q-mb-md text-h3">Do more with add-ons</div>
+            <div class="q-pr-xl q-mb-xl text-h6 text-weight-light text-left">ETake your Docs experience even further
+              with add-ons. Try Lucidchart Diagrams to create and insert flow charts and diagrams.
+              <br>
+              <a href="#"> See what else you can add on </a>
+            </div>
+          </div>
+
+          <div class="col-6 q-pa-xl text-center">
+            <q-img src="https://www.google.com/docs/about/images/docs/addons.png"
+              style="height:230px; max-width: 200px;">
+            </q-img>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- 10th row get start now -->
+      <div class="row">
+        <div class="col">
+          <q-img src="https://www.google.com/docs/about/images/en/devices.png" style="height:100%; max-width: 100%;">
+          </q-img>
+        </div>
+        <div class="col-6  q-pa-xl q-ma-xl">
+          <div class="width" style="max-width: 450px;">
+            <div class="q-pr-xl q-pt-xl q-my-md text-h4">Get started now.</div>
+            <div class="q-pr-xl q-mb-xl text-body1 text-weight-light text-left">Docs is ready to go when you are. Simply
+              create a document through your browser or download the app for your mobile device.
+            </div>
+            <q-btn color="primary" label="Get Google Docs " />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="col-12 g_color">
+      <div class="wrapper_container">
+        <!-- 1st row Social Icon-->
+        <div class="col q-my-md q-gutter-md" style="font-size:small">
+          <q-icon class="text-caption">Follow:</q-icon>
+          <q-icon name="img:https://www.google.com/docs/about/images/footer_facebook_2x.png" />
+          </q-icon>
+          <q-icon name="img:https://www.google.com/docs/about/images/footer_twitter_2x.png" />
+          </q-icon>
+          <q-icon name="img:https://www.google.com/docs/about/images/footer_blogger_2x.jpg" />
+          </q-icon>
+          <q-icon name="img:https://www.google.com/docs/about/images/footer_youtube_2x.png" />
+          </q-icon>
+          <q-separator/ class="q-mt-md">
+        </div>
+
+        <!-- 2nd row -->
+        <div class="row ">
+          <div class="col-3 q-mt-md">
+            <div class="items-start" style="max-width:220px;">
+              <span class="text-Subtitle1 text-weight-bold">About Google Docs</span>
+              <ul style="padding:0;">
+                <li class="text-decoration-none"><a href="#">Google Docs</a></li>
+                <li class="text-decoration-none"><a href="#">Google Sheets</a></li>
+                <li class="text-decoration-none"><a href="#">Google Slides</a></li>
+                <li class="text-decoration-none"><a href="#">Google Forms</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3 q-mt-md">
+            <div class="text-Subtitle1 text-weight-bold">Downloads & more</div>
+            <ul style="padding:0;">
+              <li class="text-decoration-none"><a href="#">Docs for Android</a></li>
+              <li class="text-decoration-none"><a href="#">Google Slides</a></li>
+              <li class="text-decoration-none"><a href="#">Google Forms</a></li>
+              <li class="text-decoration-none"><a href="#">Slides for Android</a></li>
+              <li class="text-decoration-none"><a href="#">Docs for iPhone & iPad</a></li>
+              <li class="text-decoration-none"><a href="#">Sheets for Android</a></li>
+              <li class="text-decoration-none"><a href="#">Slides for Android</a></li>
+              <li class="text-decoration-none"><a href="#">Docs for iPhone & iPad</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <div class="text-Subtitle1 text-weight-bold"> Support</div>
+            <ul style="padding:0;">
+              <li class="text-decoration-none"><a href="#">Docs Help Center</a></li>
+              <li class="text-decoration-none"><a href="#">Google Docs Forum</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-Subtitle1 text-weight-bold">Related Solutions</div>
+            <ul style="padding:0;">
+              <li class="text-decoration-none"><a href="#"> Google Drive </a></li>
+              <li class="text-decoration-none"><a href="#">Google Cloud Platform </a></li>
+              <li class="text-decoration-none"><a href="#"> G Suite </a></li>
+              <li class="text-decoration-none"><a href="#">Google Apps for Education </a></li>
+              <li class="text-decoration-none"><a href="#">Google Business Solutions </a></li>
+              <li class="text-decoration-none"><a href="#"> Google Apps for Governmen </a></li>
+            </ul>
+          </div>
+          <q-separator />
+        </div>
+
+        <!-- 3rd row -->
+        <div class="col">
+          <ul>
+            <li class="text-decoration-none" style="display: inline-block"><a href="#"> Google</a></li>
+            <li class="text-decoration-none" style="display: inline-block"><a href="#"> Privacy</a></li>
+            <li class="text-decoration-none" style="display: inline-block"><a href="#"> Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add the following at the end of your body tag -->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
+
+  <script>
+    /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+    new Vue({
+      el: '#q-app',
+      data: function () {
+        return {
+          tab: 'mails'
+        }
+      },
+      methods: {},
+      // ...etc
+    })
+  </script>
+</body>
+
+</html>
